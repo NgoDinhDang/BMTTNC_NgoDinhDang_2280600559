@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành An toàn thông tin nâng cao</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #fce4ec; /* Soft pink background */
+            font-family: 'Poppins', sans-serif;
+            color: #6d2e46; /* Deep pink for text */
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+        }
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header-section img {
+            max-width: 250px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header-section h2 {
+            color: #c2185b; /* Vibrant pink for header */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .cipher-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            justify-items: center;
+        }
+        .cipher-card {
+            background-color: #fff1f5; /* Light pink card background */
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .cipher-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .cipher-icon {
+            font-size: 2.5rem;
+            color: #ec407a; /* Bright pink icon */
+            margin-bottom: 15px;
+        }
+        .cipher-link {
+            text-decoration: none;
+            color: #ad1457; /* Medium pink for links */
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        .cipher-link:hover {
+            color: #880e4f; /* Darker pink on hover */
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .cipher-grid {
+                grid-template-columns: 1fr;
+            }
+            .header-section img {
+                max-width: 200px;
+            }
+            .header-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <img src="https://file1.hutech.edu.vn/file/editor/homepage/stories/hinh34/logo%20CMYK-01.png" 
+                 alt="HUTECH Logo" class="img-fluid">
+            <h2>BÀI THỰC HÀNH BẢO MẬT THÔNG TIN NÂNG CAO</h2>
+        </div>
+        <div class="cipher-grid">
+            <div class="cipher-card">
+                <div class="cipher-icon"><i class="fas fa-key"></i></div>
+                <div class="card-body">
+                    <a href="/caesar" class="cipher-link">Caesar Cipher</a>
+                </div>
+            </div>
+            <div class="cipher-card">
+                <div class="cipher-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="card-body">
+                    <a href="/vigenere" class="cipher-link">Vigenere</a>
+                </div>
+            </div>
+            <div class="cipher-card">
+                <div class="cipher-icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="card-body">
+                    <a href="/railfence" class="cipher-link">Railfence</a>
+                </div>
+            </div>
+            <div class="cipher-card">
+                <div class="cipher-icon"><i class="fas fa-check-square"></i></div>
+                <div class="card-body">
+                    <a href="/playfair" class="cipher-link">Playfair</a>
+                </div>
+            </div>
+            <div class="cipher-card">
+                <div class="cipher-icon"><i class="fas fa-arrows-alt"></i></div>
+                <div class="card-body">
+                    <a href="/transposition" class="cipher-link">Transposition</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
